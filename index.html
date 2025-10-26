@@ -2314,7 +2314,7 @@ Data Murid:\n${detailedData}`;
                                     return `agar dapat *${getSimplifiedPhrase(goalDesc)}*`;
                                 });
                                 // Gabungkan menjadi satu kalimat per dimensi
-                                return `dimensi **${dimName}** ${joinPhrrases(dimGoals)}`;
+                                return `dimensi **${dimName}** ${joinPhrases(dimGoals)}`;
                             });
                             
                             narasiInti += `${separator} ${joinPhrases(focusPhrases)} secara lebih konsisten.`;
@@ -3545,7 +3545,7 @@ Data Murid:\n${detailedData}`;
             setupEventListeners();
         };
         
-        init();
+        init(); // PANGGILAN init() DIPERTAHANKAN DI SINI, DI DALAM DOMContentLoaded
     });
     </script>
 </body>
